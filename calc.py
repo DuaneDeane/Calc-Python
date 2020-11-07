@@ -1,10 +1,11 @@
-#imports
+# imports
 from os import system, name
 from time import sleep
 
 #global vars
 
-#functions
+# functions
+
 
 def print_menu():
     print('********************')
@@ -21,17 +22,20 @@ def print_menu():
     print('[x] Exit')
     print('-' * 20)
 
+
 def clear():
     if name == 'nt':
         _ = system('cls')
     else:
         _ = system('clear')
+
+
 print('\n'*10)
 sleep(2)
 clear()
-    #HW: how to clear the console with python
+# HW: how to clear the console with python
 
-#instructions
+# instructions
 opc = ''
 
 while(opc != 'x'):
@@ -51,15 +55,15 @@ while(opc != 'x'):
         num2 = float(input("Please enter current year: "))
 
     if(opc == '1'):
-        print ("Result is: ", num1 + num2)
+        print("Result is: ", num1 + num2)
     elif(opc == '2'):
-        print ("Result is: ", num1 - num2)
+        print("Result is: ", num1 - num2)
     elif(opc == '3'):
-        print ("Result is: ", num1 * num2)
+        print("Result is: ", num1 * num2)
     elif(opc == '4'):
-        print ("Result is: ", num1 / num2)
+        print("Result is: ", num1 / num2)
     elif(opc == '5'):
-        print ("Result is: ", num2 - num1) 
+        print("Result is: ", num2 - num1)
 
     input("Press Enter to continue...")
 
