@@ -63,7 +63,7 @@ while(opc != 'x'):
     elif(opc == '4'):
         print("Result is: ", num1 / num2)
     elif(opc == '5'):
-        print("Result is: ", num2 - num1)
+        print("You are: ", num2 - num1, "years old")
 
     input("Press Enter to continue...")
 
